@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Tabuleiro;
 
-namespace Tabuleiro
+namespace tabuleiro
 {
     class Peca
     {
@@ -12,9 +11,9 @@ namespace Tabuleiro
         public int qtdMovimentos { get; protected set; }
         public Tabuleiro tab { get; set; }
 
-        public Peca(Posicao Posicao,Cor Cor, Tabuleiro Tab)
+        public Peca(Tabuleiro Tab, Cor Cor)
         {
-            this.posicao = Posicao;
+            this.posicao = null;
             this.cor = Cor;
             this.qtdMovimentos = 0;
             this.tab = Tab;
